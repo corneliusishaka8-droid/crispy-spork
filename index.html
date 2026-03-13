@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishaka Finance Hub - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body id="home-page">
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">Ishaka <span>Finance</span></div>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="expenses.html"><i class="fas fa-receipt"></i> Expenses</a></li>
+                    <li><a href="budget.html"><i class="fas fa-chart-pie"></i> Budget</a></li>
+                    <li><a href="invoices.html"><i class="fas fa-file-invoice"></i> Invoices</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome back, Ishaka 👋</h1>
+                <p class="lead">Your personal finance hub for Lagos life</p>
+            </div>
+        </section>
+
+        <section class="dashboard">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card" id="total-spent">₦0</div>
+                    <div class="stat-card" id="budget-used">0% of budget used</div>
+                    <div class="stat-card" id="expenses-count">0 transactions</div>
+                </div>
+
+                <h2>Quick Actions</h2>
+                <div class="quick-links">
+                    <a href="expenses.html" class="btn btn-primary">Add Expense</a>
+                    <a href="budget.html" class="btn btn-primary">Set Budget</a>
+                    <a href="invoices.html" class="btn btn-primary">Create Invoice</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Ishaka Finance Hub • Built for Lagos professionals</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

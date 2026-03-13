@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishaka Finance Hub - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body id="contact-page">
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">Ishaka <span>Finance</span></div>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="expenses.html"><i class="fas fa-receipt"></i> Expenses</a></li>
+                    <li><a href="budget.html"><i class="fas fa-chart-pie"></i> Budget</a></li>
+                    <li><a href="invoices.html"><i class="fas fa-file-invoice"></i> Invoices</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container" style="max-width: 700px;">
+                <h1>Get in Touch</h1>
+                <p class="lead">Have questions about budgeting, invoicing, or need custom features? Send us a message.</p>
+
+                <form id="contact-form" class="form">
+                    <div class="form-row">
+                        <div>
+                            <label>Full Name</label>
+                            <input type="text" id="contact-name" required placeholder="Your name">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div>
+                            <label>Email Address</label>
+                            <input type="email" id="contact-email" required placeholder="you@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div>
+                            <label>Message</label>
+                            <textarea id="contact-message" rows="6" required placeholder="How can we help you today?"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <div id="contact-result" style="margin-top:1.5rem; text-align:center; font-weight:600; min-height:2rem;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Ishaka Finance Hub • Lagos, Nigeria</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

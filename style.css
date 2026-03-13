@@ -1,0 +1,88 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f8fafc;
+    color: #1e2937;
+    line-height: 1.6;
+}
+
+.header { background: #0f172a; color: white; position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 1.8rem; font-weight: 700; }
+.logo span { color: #60a5fa; }
+
+.nav-list { display: flex; gap: 2rem; list-style: none; }
+.nav-list a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+.nav-list a.active, .nav-list a:hover { color: #60a5fa; }
+
+.menu-toggle { display: none; background: none; border: none; color: white; font-size: 1.8rem; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+.hero {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    color: white;
+    text-align: center;
+    padding: 7rem 1rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+.btn-primary { background: #3b82f6; color: white; }
+.btn-primary:hover { background: #2563eb; transform: translateY(-3px); }
+
+/* Expense Table, Budget Cards, Invoice Preview */
+table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+th { background: #f1f5f9; }
+
+.progress-bar {
+    height: 10px;
+    background: #3b82f6;
+    border-radius: 9999px;
+    margin-top: 0.5rem;
+}
+
+.invoice-preview {
+    background: white;
+    padding: 2rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #0f172a; }
+    .nav.active { display: block; }
+    .nav-list { flex-direction: column; padding: 1.5rem; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .quick-links{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

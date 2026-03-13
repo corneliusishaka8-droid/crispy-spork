@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishaka Finance Hub - Invoice Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body id="invoices-page">
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">Ishaka <span>Finance</span></div>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="expenses.html"><i class="fas fa-receipt"></i> Expenses</a></li>
+                    <li><a href="budget.html"><i class="fas fa-chart-pie"></i> Budget</a></li>
+                    <li><a href="invoices.html" class="active"><i class="fas fa-file-invoice"></i> Invoices</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Create Professional Invoice</h1>
+
+                <form id="invoice-form" class="form">
+                    <div class="form-row">
+                        <div>
+                            <label>Client Name</label>
+                            <input type="text" id="client-name" required placeholder="e.g. Mr. Adebayo">
+                        </div>
+                        <div>
+                            <label>Invoice Number</label>
+                            <input type="text" id="invoice-number" required placeholder="#INV-001">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div>
+                            <label>Issue Date</label>
+                            <input type="date" id="issue-date" required>
+                        </div>
+                        <div>
+                            <label>Due Date</label>
+                            <input type="date" id="due-date" required>
+                        </div>
+                    </div>
+
+                    <h3>Items</h3>
+                    <div id="invoice-items"></div>
+
+                    <button type="button" id="add-item-btn" class="btn" style="margin:1rem 0; background:#64748b; color:white;">
+                        + Add Item
+                    </button>
+
+                    <div class="form-row">
+                        <div>
+                            <label>Notes / Terms</label>
+                            <textarea id="notes" rows="3" placeholder="Payment within 7 days. Thank you for your business!"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Generate Invoice</button>
+                </form>
+
+                <div id="invoice-preview" class="invoice-preview" style="display:none; margin-top:2.5rem;">
+                    <div style="text-align:right; margin-bottom:1rem;">
+                        <button id="print-invoice" class="btn" style="background:#10b981; color:white;">Print / Save as PDF</button>
+                    </div>
+                    <div id="preview-content"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Ishaka Finance Hub</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>1
